@@ -1,5 +1,6 @@
 {
 	"files.associations": {
-		"scavtrap.hpp": "c"
+		"scavtrap.hpp": "c",
+		"iosfwd": "cpp"
 	}
 }
