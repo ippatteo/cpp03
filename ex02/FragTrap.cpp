@@ -8,7 +8,7 @@ FragTrap::FragTrap(): ClapTrap()
     this->_attackDamage = 30;
 }
 
-FragTrap::FragTrap(std::string str) : ClapTrap(str) 
+FragTrap::FragTrap(std::string str) : ClapTrap(str)
 {
 	std::cout << "Frag Trap constructor called" << std::endl;
     this->_hitPoints = 100;
@@ -33,7 +33,7 @@ FragTrap::FragTrap(const FragTrap &inst) : ClapTrap()
 FragTrap& FragTrap::operator=(const FragTrap& inst)
 {
     std::cout << "Frag Trap copy assignement operator called" << std::endl;
-        if (this != &inst) 
+        if (this != &inst)
         {
             this->_Name = inst._Name;
             this->_hitPoints = inst._hitPoints;
@@ -47,7 +47,7 @@ void FragTrap::highFivesGuys(void)
 {
 	std::string	answer;
 	std::cout << this->_Name <<" wants to give you an high five do you accept it?" << std::endl;
-	std::cout << "yes(1) no(0)" << std::endl;
+	std::cout << "write 'yes' if you want to give an high five" << std::endl;
 	std::cin >> answer;
 	if (answer == "yes" || answer == "Yes" || answer == "YES" || answer == "Fuck yhea" || answer == "YHEEEEEEA")
 		std::cout << "You gave " << this->_Name << " an high five" << std::endl;
